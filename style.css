@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #c28f23;
+}
+.tittle {
+  color: #755715;
+  text-align: center;
+  padding: 5px;
+}
+.lampada {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+.container {
+  margin: 80px auto;
+  width: 200px;
+  background-color: #c28f23;
+}
+.button {
+  color: #755715;
+  padding: 5px;
+  background-color: #f7ce76;
+  border-radius: 4px;
+  border: solid 2px #f7ce76;
+}
+.button:hover {
+  background: #f5b72d;
+}
+.botoes {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
