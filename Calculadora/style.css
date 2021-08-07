@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  padding: 5px;
+}
+.calculadora {
+  background-color: red;
+  width: 250px;
+  height: 300px;
+  margin: 70px auto;
+  border-radius: 3px;
+  border: solid 2px blue;
+}
+.calculadora h2 {
+  text-align: center;
+  padding: 4px;
+  color: #fff;
+  font-size: 26px;
+}
+.grid button {
+  /* width: 40px;
+  height: 40px; */
+}
+.grid {
+  margin-left: 37px;
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 40px);
+  grid-template-rows: repeat(5, 40px);
+  gap: 5px;
+
+  grid-template-areas:
+    "clear    seta   div    mult"
+    "sete     oito   nove   menos"
+    "quatro   cinco  seis   mais"
+    "um       dois   tres   igual"
+    "zer      zer    ponto  igual";
+}
+.clear {
+  grid-area: clear;
+}
+.seta {
+  grid-area: seta;
+}
+.dividir {
+  /* display: inline-block; */
+  grid-area: div;
+}
+.multiplicar {
+  grid-area: mult;
+}
+
+.sete {
+  grid-area: sete;
+}
+.oito {
+  grid-area: oito;
+}
+.nove {
+  grid-area: nove;
+}
+.menos {
+  grid-area: menos;
+}
+
+.quatro {
+  grid-area: quatro;
+}
+.cinco {
+  grid-area: cinco;
+}
+.seis {
+  grid-area: seis;
+}
+.mais {
+  grid-area: mais;
+}
+
+.um {
+  grid-area: um;
+}
+.dois {
+  grid-area: dois;
+}
+.tres {
+  grid-area: tres;
+}
+.igual {
+  grid-area: igual;
+}
+.zer {
+  grid-area: zer;
+  /* display: inline-block; */
+}
+.ponto {
+  grid-area: ponto;
+}
+
+.resultado {
+  width: 174px;
+  height: 20px;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 10px;
+}
