@@ -11,34 +11,34 @@
     <h1>Vanilla JS</h1>
     <div class="calculadora">
         <h2>Calculadora</h2>
-        <div class="resultado"></div>
+        <div class="resultado"> <p id="number"></p> </div>
         <div class="grid">
             
-                <button class="clear">C</button>
-                <button class="seta"><</button>
-                <button class="dividir">/</button>
-                <button class="multiplicar">X</button>
+                <button class="clear" onclick="clean()">C</button>
+                <button class="seta" onclick="back()"><</button>
+                <button class="dividir" onclick="insert('/')">/</button>
+                <button class="multiplicar" onclick="insert('*')">X</button>
            
-                <button class="sete">7</button>
-                <button class="oito">8</button>
-                <button class="nove">9</button>
-                <button class="menos">-</button>
+                <button class="sete" onclick="insert('7')">7</button>
+                <button class="oito" onclick="insert('8')">8</button>
+                <button class="nove" onclick="insert('9')">9</button>
+                <button class="menos" onclick="insert('-')">-</button>
             
 
-                <button class="quatro">4</button>
-                <button class="cinco">5</button>
-                <button class="seis">6</button>
-                <button class="mais">+</button>
+                <button class="quatro" onclick="insert('4')">4</button>
+                <button class="cinco" onclick="insert('5')">5</button>
+                <button class="seis" onclick="insert('6')">6</button>
+                <button class="mais" onclick="insert('+')">+</button>
            
 
-                <button class="um">1</button>
-                <button class="dois">2</button>
-                <button class="treis">3</button>
-                <button class="igual">=</button>
+                <button class="um" onclick="insert('1')">1</button>
+                <button class="dois" onclick="insert('2')">2</button>
+                <button class="treis" onclick="insert('3')">3</button>
+                <button class="igual" onclick="calcular()">=</button>
             
 
-                <button class="zer">0</button>
-                <button class="ponto">.</button>
+                <button class="zer" onclick="insert('0')">0</button>
+                <button class="ponto" onclick="insert('.')">.</button>
            
         </div>
     </div>
